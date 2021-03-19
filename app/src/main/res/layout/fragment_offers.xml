@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".DialogFragment.OffersFragment">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:background="@color/white"
+     >
+  <LinearLayout
+      android:id="@+id/root"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/dp50"
+       android:layout_gravity="center"
+       android:background="@color/white"
+       android:gravity="center"
+       >
+    <ImageView
+        android:id="@+id/backIV"
+        android:layout_width="@dimen/dp20"
+        android:layout_height="@dimen/dp20"
+        android:layout_marginLeft="@dimen/dp5"
+        android:src="@drawable/back_arrow"
+        />
+
+<com.project.quayobasket.customFont.TextViewBoldFont
+        android:id="@+id/selectaddresTV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Your Offers"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp5"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp14"
+        android:textAllCaps="true" />
+   </LinearLayout>
+
+
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="0.5dp"
+       android:background="@color/gray"
+       />
+
+   <com.project.quayobasket.customFont.TextViewAirenregular
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:text="Available Offers"
+       android:gravity="center_vertical"
+       android:paddingLeft="@dimen/dp20"
+       android:textColor="@color/black"
+       android:background="@color/red_bg_light"
+       />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/dp50"
+       android:orientation="horizontal"
+       android:weightSum="1"
+       >
+<com.project.quayobasket.customFont.TextViewBoldFont
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="@string/app_name"
+        android:gravity="center_vertical"
+        android:layout_weight="0.5"
+        android:paddingLeft="@dimen/dp20"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16"
+        />
+
+    <com.project.quayobasket.customFont.TextViewAirenregular
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Recommended"
+        android:gravity="center_vertical|end"
+        android:paddingRight="@dimen/dp8"
+        android:layout_weight="0.5"
+        android:paddingLeft="@dimen/dp20"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp12"
+        />
+   </LinearLayout>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="0.5dp"
+       android:background="@color/gray"
+       />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_gravity="center"
+       android:gravity="center"
+
+       >
+
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_gravity="center"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp8"
+        android:visibility="gone"
+        />
+
+    <com.project.quayobasket.customFont.TextViewAirenregular
+        android:id="@+id/nooffersTV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No offers applicable"
+        android:gravity="center"
+        android:paddingRight="@dimen/dp8"
+        android:layout_weight="0.5"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/dp20"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp12"
+        />
+   </LinearLayout>
+
+
+  </LinearLayout>
+
+ </LinearLayout>
+</layout>

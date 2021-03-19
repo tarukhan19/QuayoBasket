@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbarmain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    app:theme="@style/ThemeOverlay.AppCompat.Dark"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+    <ImageView
+        android:id="@+id/plusimage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back_white"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="start"
+        android:visibility="visible"
+        />
+
+
+
+
+
+ <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_5dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="10dp"
+                    android:weightSum="1">
+
+                        <com.project.quayobasket.customFont.EditTextAirenRegular
+                            android:id="@+id/searchET"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:textSize="16sp"
+                            android:hint="search"
+                            android:layout_weight="0.8"
+                            android:layout_margin="@dimen/dp8"
+                            android:background="@color/white"
+                            android:paddingLeft="@dimen/dp8"
+                            android:textColor="@color/colorPrimaryDark"
+                            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                            android:layout_gravity="center" />
+
+                    <LinearLayout
+                        android:id="@+id/micLL"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="0.2"
+                        >
+
+                        <ImageView
+                            android:id="@+id/micIV"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp30"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/dimen_5dp"
+                            android:layout_margin="@dimen/dp5"
+                            android:src="@drawable/mic" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

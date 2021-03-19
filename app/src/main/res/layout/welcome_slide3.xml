@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/slide_three">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="#90000000">
+
+<!--        <ImageView-->
+<!--            android:layout_width="@dimen/dp150"-->
+<!--            android:layout_height="@dimen/dp150"-->
+<!--            android:background="@drawable/logo"-->
+<!--            android:layout_gravity="left"/>-->
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.project.quayobasket.customFont.TextViewAirenregular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp40"
+                android:paddingLeft="@dimen/dp20"
+                android:textColor="@color/lite_grey"
+                android:text="Deliver to your "
+                />
+
+        <com.project.quayobasket.customFont.TextViewBoldFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp50"
+                android:paddingLeft="@dimen/dp20"
+                android:textColor="@color/lite_grey"
+                android:text="Doorstep "/>
+
+<!--            <com.proj.quayobasket.customFont.TextViewAirenregular-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="@dimen/sp16"-->
+<!--                android:paddingLeft="@dimen/dp20"-->
+<!--                android:paddingRight="@dimen/dp20"-->
+<!--                android:textColor="@color/lite_grey"-->
+<!--                android:text="Food is everything we are. It’s an extension of nationalist feeling, ethnic feeling, your personal history, your province, your region, your tribe, your grandma. It’s inseparable from those from the get-go."/>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

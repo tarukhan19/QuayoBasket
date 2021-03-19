@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:orientation="vertical">
+
+            <com.project.quayobasket.customFont.TextViewAirenregular
+                android:id="@+id/percentmsgTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.project.quayobasket.customFont.TextViewAirenregular
+                android:id="@+id/validmsgTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:text="@string/app_name"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp10"
+                android:weightSum="1"
+                >
+
+            <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:id="@+id/promocodeTV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:background="@drawable/promocodebg"
+                    android:padding="@dimen/dp5"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:id="@+id/applyTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:gravity="end"
+                    android:padding="@dimen/dp5"
+                    android:text="APPLY"
+                    android:textColor="@color/green"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <com.project.quayobasket.customFont.TextViewAirenregular
+            android:id="@+id/errormsgTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:paddingLeft="@dimen/dp10"
+            android:textColor="@color/red"
+            android:paddingBottom="@dimen/dp5"
+            android:visibility="gone"
+            android:textSize="10sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+    </LinearLayout>
+</layout>

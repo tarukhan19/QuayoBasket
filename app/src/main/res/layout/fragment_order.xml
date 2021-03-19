@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DialogFrgament.CartActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lite_grey">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addressCV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/linearlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/editaddressLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp5"
+                    android:weightSum="1">
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:id="@+id/deliveryaddressTV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:padding="@dimen/dp3"
+                        android:singleLine="true"
+                        android:text="@string/app_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp14"
+
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/edit" />
+
+                </LinearLayout>
+
+
+            <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:id="@+id/changeAddressTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp5"
+                    android:text="Add New Address ( + )"
+                    android:textColor="@color/black"
+
+                    android:textSize="@dimen/sp16" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/calcCV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressCV"
+            android:layout_marginTop="8dp"
+            android:elevation="@dimen/dp3"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp5"
+                    android:weightSum="1"
+
+                    >
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="Item Total: "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:id="@+id/itemtotalTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.5"
+                        android:gravity="end"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:weightSum="1"
+
+                    >
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="Delivery Charges: "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:id="@+id/deliveryChargesTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.5"
+                        android:gravity="end"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:weightSum="1"
+
+                    >
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="Packaging Charges: "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_12sp" />
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:id="@+id/packagingChargesTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.5"
+                        android:gravity="end"
+                        android:text="Rs. 0.0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:weightSum="1"
+
+                    >
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="Tax &amp; Charges: "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:id="@+id/taxchargesTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.5"
+                        android:gravity="end"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/promoLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:visibility="gone"
+                    android:weightSum="1"
+
+                    >
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:id="@+id/promonameTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:id="@+id/promoamountTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.5"
+                        android:gravity="end"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:weightSum="1"
+
+                    >
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="Grand Total: "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_15sp" />
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:id="@+id/grandtotalTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.5"
+                        android:gravity="end"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_15sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/offersCV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calcCV"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            android:elevation="@dimen/dp3"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/b4applyLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_bg_light"
+                android:orientation="vertical">
+
+            <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:text="promo code"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:weightSum="1"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+
+                        >
+
+                        <ImageView
+                            android:layout_width="@dimen/dp20"
+                            android:layout_height="@dimen/dp20"
+                            android:src="@drawable/offer" />
+
+                    <com.project.quayobasket.customFont.TextViewBoldFont
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp3"
+                            android:text="Select a promo code"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dimen_12sp" />
+                    </LinearLayout>
+
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:id="@+id/applyofferTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.3"
+                        android:gravity="end"
+                        android:text="Apply Offer"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/dimen_10sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/afterapplyLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_bg_light"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:weightSum="1"
+
+                    >
+
+
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:id="@+id/promocodenameAATV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp3"
+                        android:text="Select a promo code"
+                        android:layout_weight="0.7"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_12sp" />
+
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:id="@+id/offeramountAATV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.3"
+                        android:gravity="end"
+                        android:text="Apply Offer"
+                        android:textColor="@color/blue"
+                        android:textSize="@dimen/dimen_10sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:paddingBottom="@dimen/dp5"
+                    android:weightSum="1"
+
+                    >
+
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:id="@+id/promopercmsgAATV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp3"
+                        android:layout_weight="0.7"
+                        android:text="Select a promo code"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/dimen_10sp" />
+
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:id="@+id/removeTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="0.3"
+                        android:gravity="end"
+                        android:text="Remove"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/dimen_10sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/offersCV"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="70dp"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/dp25"
+            android:scrollbars="vertical"
+
+            android:visibility="visible" />
+
+
+        <LinearLayout
+            android:id="@+id/nrfLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+        <com.project.quayobasket.customFont.TextViewBoldFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:gravity="center"
+                android:text="Your Cart is empty!"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/checkoutLL"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_above="@id/appversionLL"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:background="@color/colorPrimaryDark"
+            android:visibility="visible"
+            android:weightSum="1">
+
+        <com.project.quayobasket.customFont.TextViewBoldFont
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_weight="0.4"
+                android:gravity="start|center"
+                android:text="Checkout"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/checkoutTV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:gravity="end|center"
+                android:orientation="horizontal">
+
+            <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:id="@+id/paidamountTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/dimen_8dp"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:src="@drawable/rightarror" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/appversionLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/red_bg_light"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp5"
+            android:weightSum="1">
+
+        <com.project.quayobasket.customFont.TextViewBoldFont
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:text="App Version:  "
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_15sp" />
+
+            <com.project.quayobasket.customFont.TextViewAirenregular
+                android:id="@+id/versioncodeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="0.7"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_15sp"
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

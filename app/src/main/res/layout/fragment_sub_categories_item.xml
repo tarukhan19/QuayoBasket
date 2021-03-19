@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DialogFrgament.CartActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lite_grey">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/item_searchtoolbar" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+            >
+
+
+        <LinearLayout
+            android:id="@+id/dataLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp5"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/dp80"
+                android:scrollbars="vertical"
+                 />
+
+
+            <LinearLayout
+                android:id="@+id/norecrLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+
+            <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:id="@+id/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:gravity="center"
+
+                    android:text="Your cart is empty!"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dimen_20sp" />
+
+                <com.project.quayobasket.customFont.ButtonAirenRegular
+                    android:id="@+id/reloadBTN"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:background="@drawable/gradient"
+                    android:gravity="center"
+                    android:text="Reload"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_14sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+        <include
+            layout="@layout/item_viewcart_bottomsheet"
+            />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <!--        <ScrollView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:background="@drawable/background"-->
+
+    <!--            >-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:orientation="vertical">
+
+
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="100dp"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp10"
+                android:background="@drawable/transpbackground"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.2"
+                    android:gravity="center"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_gravity="center"
+                        android:src="@drawable/mobileno" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:padding="5dp">
+
+                    <com.project.quayobasket.customFont.EditTextAirenRegular
+                        android:id="@+id/mobilenoET"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="Mobile No"
+                        android:singleLine="true"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        android:src="@drawable/email"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="15sp"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.project.quayobasket.customFont.EditTextAirenRegular
+                android:id="@+id/otpET"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55"
+                android:hint="OTP"
+                android:singleLine="true"
+                android:background="@drawable/transpbackground"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginRight="@dimen/dp10"
+                android:paddingLeft="@dimen/dp8"
+                android:inputType="number"
+                android:maxLength="6"
+                android:visibility="gone"
+                android:src="@drawable/email"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="15sp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp55"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+
+
+                <com.project.quayobasket.customFont.ButtonAirenRegular
+                    android:id="@+id/resendotpBTN"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/whitebutton"
+                    android:text="RESEND OTP"
+                    android:visibility="gone"
+                    android:layout_marginRight="@dimen/dp3"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <com.project.quayobasket.customFont.ButtonAirenRegular
+                    android:id="@+id/loginBTN"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:background="@drawable/gradient"
+                    android:text="Send OTP for sign in/signup"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/signupLL"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginLeft="@dimen/dp10"-->
+<!--                android:layout_marginRight="@dimen/dp10"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="@dimen/dp5"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:gravity="center">-->
+
+
+<!--            <com.proj.quayobasket.customFont.TextViewBoldFont-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Register with us."-->
+<!--                    android:textSize="@dimen/sp16"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginTop="@dimen/dp5"-->
+<!--                android:weightSum="1"-->
+<!--                >-->
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_weight="0.4"-->
+<!--                    android:background="@color/black"-->
+<!--                    />-->
+
+<!--            <com.proj.quayobasket.customFont.TextViewBoldFont-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="OR"-->
+<!--                    android:layout_weight="0.2"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textSize="@dimen/sp14"-->
+<!--                    />-->
+
+<!--                <View-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_weight="0.4"-->
+<!--                    android:background="@color/black"-->
+<!--                    />-->
+<!--            </LinearLayout>-->
+
+        <com.project.quayobasket.customFont.TextViewBoldFont
+                android:id="@+id/loginwithemailTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login with Password"
+                android:textSize="@dimen/sp16"
+                android:layout_marginTop="@dimen/dp5"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:orientation="horizontal"-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:gravity="center"-->
+            <!--            android:weightSum="1"-->
+            <!--            >-->
+            <!--            <View-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="1dp"-->
+            <!--                android:layout_weight="0.4"-->
+            <!--                android:background="@color/black"-->
+            <!--                />-->
+
+            <!--        <com.proj.quayobasket.customFont.TextViewBoldFont-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="OR"-->
+            <!--                android:layout_weight="0.2"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:gravity="center"-->
+            <!--                android:textSize="@dimen/sp14"-->
+            <!--                />-->
+
+            <!--            <View-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="1dp"-->
+            <!--                android:layout_weight="0.4"-->
+            <!--                android:background="@color/black"-->
+            <!--                />-->
+            <!--        </LinearLayout>-->
+
+            <!--    <com.proj.quayobasket.customFont.TextViewBoldFont-->
+            <!--            android:id="@+id/loginwithotpTV"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Login With OTP"-->
+            <!--            android:textSize="@dimen/sp18"-->
+            <!--            android:layout_marginTop="@dimen/dp10"-->
+            <!--            android:textColor="@color/black"-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:gravity="center"-->
+            <!--            />-->
+
+        </LinearLayout>
+        <!--        </ScrollView>-->
+
+
+    </LinearLayout>
+
+
+
+
+
+</layout>

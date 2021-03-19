@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".Payment.RazorPayActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/item_toolbar" />
+
+            <LinearLayout
+                android:id="@+id/failureLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/norecordfound" />
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Something Went wrong"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+
+                    />
+
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:id="@+id/retryTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Retry"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="18sp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/successLL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/dp5"
+                android:visibility="gone"
+                >
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ORDER SUMMARY"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:padding="@dimen/dp8"
+                    />
+                <!--            <com.app.kutumb.customFont.TextViewAirenregular-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:text="@string/app_name"-->
+                <!--                android:textColor="@color/black"-->
+                <!--                android:textSize="16sp"-->
+                <!--                android:paddingLeft="@dimen/dp8"-->
+                <!--                />-->
+
+                <!--            <com.app.kutumb.customFont.TextViewAirenregular-->
+                <!--                android:id="@+id/addressTV"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:textColor="@color/black"-->
+                <!--                android:textSize="14sp"-->
+                <!--                android:layout_marginTop="2dp"-->
+                <!--                android:paddingLeft="@dimen/dp8"-->
+                <!--                />-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp8"
+
+                    />
+                <com.project.quayobasket.customFont.TextViewAirenregular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your order has been confirmed by the restaurant"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:paddingLeft="@dimen/dp8"
+                    />
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="YOUR ORDER"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:paddingLeft="@dimen/dp8"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp8"
+
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:visibility="visible"
+                    android:paddingBottom="@dimen/dp20"
+                    android:scrollbars="vertical" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp8"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingRight="@dimen/dp5"
+                    android:weightSum="1"
+                    >
+                    <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/sp16"
+                        android:textColor="@color/black"
+                        android:text="Grand Total"
+                        android:layout_weight="0.5"
+                        />
+                    <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:id="@+id/granttotalTV"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textSize="@dimen/sp14"
+                        android:textColor="@color/black"
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:layout_weight="0.5"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp8"
+
+                    />
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ORDER DETAILS"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:paddingLeft="@dimen/dp8"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp8"
+
+                    />
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/dimgrey"
+                    android:text="Order Number"
+                    android:paddingLeft="@dimen/dp5"
+                    />
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:id="@+id/ordernoTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/black"
+                    android:layout_gravity="end"
+                    android:paddingLeft="@dimen/dp5"
+
+                    />
+
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/dimgrey"
+                    android:text="Payment"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:paddingLeft="@dimen/dp5"
+                    />
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:id="@+id/paymentTypeTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/sp14"
+                    android:text="Paid : Online"
+                    android:textColor="@color/black"
+                    android:layout_gravity="end"
+                    android:paddingLeft="@dimen/dp5"
+                    />
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/dimgrey"
+                    android:text="Date"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:paddingLeft="@dimen/dp5"
+                    />
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:id="@+id/currentDateTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/black"
+                    android:layout_gravity="end"
+                    android:paddingLeft="@dimen/dp5"
+                    />
+
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/dimgrey"
+                    android:text="Phone Number"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:paddingLeft="@dimen/dp5"
+                    />
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:id="@+id/mobilenoTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/black"
+                    android:layout_gravity="end"
+                    android:paddingLeft="@dimen/dp5"
+                    />
+
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp12"
+                    android:textColor="@color/dimgrey"
+                    android:text="Deliver To"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:paddingLeft="@dimen/dp5"
+                    />
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:id="@+id/addressTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/sp14"
+                    android:textColor="@color/black"
+                    android:layout_gravity="end"
+                    android:paddingLeft="@dimen/dp5"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp8"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp10"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

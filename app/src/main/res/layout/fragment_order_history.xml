@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UnusedAttribute"
+        android:background="@color/gery_inactive"
+
+        tools:context=".DialogFragment.AddressLHistoryFragment">
+        <LinearLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/adressLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:background="@color/white"
+
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/backIV"
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:src="@drawable/back_arrow"
+                    />
+            <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:id="@+id/selectaddresTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Order"
+
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"
+                    android:textAllCaps="true" />
+
+            </LinearLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+               android:background="@color/gray"
+               />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="@dimen/dp5"
+
+                android:layout_below="@id/adressLL"
+
+                >
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:visibility="gone"
+                    />
+            <com.project.quayobasket.customFont.TextViewBoldFont
+                    android:id="@+id/noorderTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="No Order found."
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp14"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

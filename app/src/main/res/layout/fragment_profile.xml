@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_5dp"
+                        android:orientation="vertical"
+
+
+                        >
+                    <com.project.quayobasket.customFont.TextViewBoldFont
+                            android:id="@+id/fnameET"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="First Name"
+                            android:inputType="textCapSentences"
+                            android:singleLine="true"
+                            android:src="@drawable/email"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/white"
+                            android:textSize="18sp"
+                            android:paddingLeft="@dimen/dimen_5dp"
+                            android:paddingRight="@dimen/dimen_5dp"
+                            android:paddingTop="@dimen/dimen_5dp"
+
+                            />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp40"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            >
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="@dimen/dp20"
+                                android:layout_weight="0.1"
+                                android:src="@drawable/envelope"
+                                />
+
+                            <com.project.quayobasket.customFont.TextViewAirenregular
+                                android:id="@+id/emailIDET"
+
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.9"
+                                android:text="Order History"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp12"
+
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp40"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:weightSum="1"
+                            >
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/dp20"
+                                android:layout_weight="0.1"
+                                android:src="@drawable/phoneicon"
+                                />
+
+                            <com.project.quayobasket.customFont.TextViewAirenregular
+                                android:id="@+id/mobilenoET"
+
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.9"
+                                android:text="Order History"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp12"
+
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray"
+                    />
+
+        <com.project.quayobasket.customFont.TextViewBoldFont
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food Orders"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_15sp"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp8"
+                android:visibility="gone"
+                android:textAllCaps="true"
+                />
+
+                <LinearLayout
+                    android:id="@+id/orderhistoryLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="1"
+                   >
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/order"
+                        />
+
+                    <com.project.quayobasket.customFont.TextViewAirenregular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Order History"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp12"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/adresshistoryLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/dp5"
+                    android:weightSum="1"
+                    >
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/currentadress"
+                        />
+
+                    <com.project.quayobasket.customFont.TextViewAirenregular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Address History"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp12"
+
+                        />
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray"
+                    />
+                <LinearLayout
+                    android:id="@+id/privacypolicyTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="1"
+                    >
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/info"
+                        />
+
+                    <com.project.quayobasket.customFont.TextViewAirenregular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/black"
+                        android:layout_weight="0.9"
+                        android:textSize="12sp"
+                        android:gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tcTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="1"
+                    >
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/list"
+                        />
+
+                    <com.project.quayobasket.customFont.TextViewAirenregular
+                        android:layout_width="0dp"
+                        android:layout_weight="0.9"
+                        android:layout_height="wrap_content"
+                        android:text="Terms &amp; Conditions"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/aboutusTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="1"
+                    >
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_weight="0.1"
+                        android:src="@drawable/contact"
+                        />
+
+                    <com.project.quayobasket.customFont.TextViewAirenregular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="About Us"
+                        android:layout_weight="0.9"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_8dp"
+                    android:layout_marginTop="@dimen/dp8"
+
+                    >
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quayo contact details"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/sp16"
+                        />
+
+                    <com.project.quayobasket.customFont.TextViewAirenregular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:text="8580370478,\n7250345802,\nLand line number: 0326-2245678"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray"
+                    android:layout_marginTop="@dimen/dp8"
+                    />
+            </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/appversionLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp5"
+            android:gravity="center"
+            android:background="@color/red_bg_light"
+            android:weightSum="1"
+            >
+        <com.project.quayobasket.customFont.TextViewBoldFont
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="App Version:  "
+                android:textSize="@dimen/dimen_15sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                />
+
+            <com.project.quayobasket.customFont.TextViewAirenregular
+                android:id="@+id/versioncodeTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:layout_gravity="start"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_15sp"
+
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

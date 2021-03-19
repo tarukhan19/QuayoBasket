@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".DialogFragment.SubmitAddressFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:ignore="UnusedAttribute">
+
+        <RelativeLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+
+            <include
+                android:id="@+id/toolbarmain"
+                layout="@layout/item_toolbar"></include>
+
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/toolbarmain">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:orientation="vertical">
+
+
+
+
+                    <com.project.quayobasket.customFont.TextViewAirenregular
+                        android:id="@+id/currentlocationTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp80"
+                        android:background="@drawable/transpbackground"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp8"
+
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+
+                        />
+
+                    <com.project.quayobasket.customFont.EditTextAirenRegular
+                        android:id="@+id/floorET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp55"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/whitebutton"
+                        android:hint="Floor/Flat No"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="@dimen/dp8"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp"
+
+                        />
+
+                    <com.project.quayobasket.customFont.EditTextAirenRegular
+                        android:id="@+id/addressline1ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp55"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/whitebutton"
+                        android:hint="Address Line 1"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="@dimen/dp8"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp"
+
+                        />
+
+                    <com.project.quayobasket.customFont.EditTextAirenRegular
+                        android:id="@+id/addressline2ET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp55"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/whitebutton"
+                        android:hint="Address Line 2"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="@dimen/dp8"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp"
+
+                        />
+
+
+                    <com.project.quayobasket.customFont.EditTextAirenRegular
+                        android:id="@+id/landmarkET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp55"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/whitebutton"
+                        android:hint="Landmark"
+                        android:inputType="textCapSentences"
+                        android:paddingLeft="@dimen/dp8"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp"
+
+                        />
+
+
+                    <com.project.quayobasket.customFont.EditTextAirenRegular
+                        android:id="@+id/pincodeET"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp55"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/whitebutton"
+                        android:hint="Pin Code"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:paddingLeft="@dimen/dp8"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/gray"
+                        android:textSize="15sp"
+
+                        />
+
+                <com.project.quayobasket.customFont.TextViewBoldFont
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:text="Address Type"
+                        android:textColor="@color/black" />
+
+                    <RadioGroup
+                        android:id="@+id/radiogrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/homeRB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:checked="true"
+                            android:text="@string/home" />
+
+                        <RadioButton
+                            android:id="@+id/officeRB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:text="@string/office"
+
+                            />
+
+                        <RadioButton
+                            android:id="@+id/otherRB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:buttonTint="@color/colorPrimaryDark"
+
+                            android:text="@string/other"
+
+                            />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <com.project.quayobasket.customFont.ButtonAirenRegular
+                android:id="@+id/submitBTN"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp45"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp8"
+                android:background="@drawable/gradient"
+                android:text="SUBMIT"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

@@ -1,2 +1,3 @@
 include ':app'
+include ':pgsdkv5ax'
 rootProject.name = "QuayoBasket"

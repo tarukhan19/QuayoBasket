@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">QuayoBasket</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_search">Search</string>
+    <string name="title_order">Order</string>
+    <string name="title_login">Sign In</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">Are you sure?</string>
+    <string name="logoutdesc">You want to logout?</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="start">Start</string>
+    <string name="api_key">AIzaSyAdoq9IbV9WMAc_wAyEpNZslrPUmJ_RCLg</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Sorry! Your device doesn\'t support speech input</string>
+    <string name="tap_on_mic">Tap on mic to speak</string>
+    <string name="restart">Restart</string>
+    <string name="title_more">More</string>
+    <string name="home">Home</string>
+    <string name="office">Office</string>
+    <string name="other">Other</string>
+    <string name="channel_name">channelname</string>
 </resources>
