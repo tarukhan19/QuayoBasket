@@ -13,7 +13,7 @@ android {
         }
     }
     defaultConfig {
-        applicationId "com.proj.quayobasket"
+        applicationId "com.project.quayobasket"
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
